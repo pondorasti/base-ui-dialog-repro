@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Hero - Base UI Example</title>
+    <meta name="description" content="Hero demo" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="demo.css" />
+    
+    <!-- Check out the Tailwind CSS' installation guide for setting it up: https://tailwindcss.com/docs/installation/framework-guides -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {},
+        },
+      }
+    </script>
+    
+    <!-- Inject classes used so that Tailwind loaded from the CDN can pre-render them. -->
+    <!-- This is for the CodeSandbox example only. You don't need this in your app. -->
+    <meta name="custom" class="flex h-10 items-center justify-center rounded-md border border-gray-200 bg-gray-50 px-3.5 text-base font-medium text-gray-900 select-none hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-1 focus-visible:outline-blue-800 active:bg-gray-100 fixed inset-0 min-h-dvh bg-black opacity-20 transition-all duration-150 data-[ending-style]:opacity-0 data-[starting-style]:opacity-0 dark:opacity-70 supports-[-webkit-touch-callout:none]:absolute top-1/2 left-1/2 -mt-8 w-96 max-w-[calc(100vw-3rem)] -translate-x-1/2 -translate-y-1/2 rounded-lg p-6 outline outline-1 outline-gray-200 data-[ending-style]:scale-90 data-[starting-style]:scale-90 dark:outline-gray-300 -mt-1.5 mb-1 text-lg mb-6 text-gray-600 justify-end gap-4" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="src/index.tsx"></script>
+  </body>
+</html>
